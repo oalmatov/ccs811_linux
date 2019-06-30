@@ -64,15 +64,11 @@ Ccs811::setEnvironmentalData( double humidity, double temperature )
 double
 Ccs811::co2() const
 {
-    //double co2( static_cast<uint16_t>(data_[0] << 8) | data_[1] );
-    //return co2;
     return static_cast<uint16_t>(data_[0] << 8) | data_[1];
 }
 
 double
 Ccs811::tvoc() const
 {
-    //double tvoc( static_cast<uint16_t>(data_[2] << 8) | data_[3] );
-    //return tvoc;
     return static_cast<uint16_t>(data_[2] << 8) | data_[3];
 }
